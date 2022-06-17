@@ -1,0 +1,52 @@
+.intro {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    // .intro__media
+
+    &__media {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        // если видео не подгрузится
+        background: #ccc url('../img/images/section/video/video-bg.png') no-repeat center center;
+        background-size: cover;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, .5);
+        }
+    }
+
+    // .intro__media-video
+
+    &__media-video {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       min-width: 100%;
+       min-height: 100%;
+       object-fit: cover;
+    }
+
+    // .intro__content
+
+    &__content {
+        z-index: 2;
+        color: #fff;
+        text-align: center;
+    }
+}
