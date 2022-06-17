@@ -1,0 +1,41 @@
+.trusted-by {
+    padding-top: 119px;
+    display: none;
+
+    // .trusted-by__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.1;
+        text-align: center;
+        color: $colorText;
+        margin-bottom: 48px;
+    }
+
+    // .trusted-by__list
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+
+    // .trusted-by__item
+
+    &__item {
+    }
+
+    .container {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: #CACACA;
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+

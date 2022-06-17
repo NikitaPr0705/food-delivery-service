@@ -471,6 +471,42 @@ h1 {
   cursor: pointer;
 }
 
+.trusted-by {
+  padding-top: 119px;
+  display: none;
+}
+
+.trusted-by__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  color: #656565;
+  margin-bottom: 48px;
+}
+
+.trusted-by__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.trusted-by .container {
+  position: relative;
+}
+
+.trusted-by .container::after {
+  position: absolute;
+  content: "";
+  background-color: #CACACA;
+  height: 1px;
+  width: 100%;
+}
+
 footer {
   display: block;
   padding: 20px 0;
@@ -606,11 +642,32 @@ footer {
 
 @media screen and (max-width: 1280px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .btn {
+    padding: 20px 30px;
+  }
+
+  .nav {
+    padding: 22px 0;
+  }
+
+  .header__offer {
+    height: 88vh;
   }
 
   .header__offer-wrap {
-    min-height: unset;
+    min-height: 610px;
+  }
+
+  .header__offer-buttons {
+    padding-bottom: 40px;
+    margin-bottom: 18px;
+  }
+
+  .header__offer-stats .stat-info p {
+    font-size: 43px;
   }
 
   .header__offer-info span {
@@ -618,11 +675,50 @@ footer {
   }
 
   .header__offer-info p {
-    font-size: 21px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
   }
 
-  .header__offer-info p.subtitle {
+  .btn {
+    padding: 13px 22px;
+  }
+
+  .overtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .header .btn__header .btn {
+    padding: 13px 22px;
+  }
+
+  .header .overtitle {
+    display: inline-block;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 1.11;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    color: #FF5634;
+    margin-bottom: 20px;
+  }
+
+  .header__offer-stats .stat-info p {
+    font-size: 34px;
+  }
+
+  .header__offer-stats .stat-info span {
+    font-size: 14px;
+  }
+
+  .header__offer-wrap {
+    min-height: unset;
+    max-width: 838px;
   }
 }
 
@@ -652,6 +748,11 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: unset;
+    max-width: 100%;
+  }
+
+  .header__offer-wrap img {
+    display: none;
   }
 
   .header__offer-info {
@@ -666,6 +767,8 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
+    padding-right: 0;
+    max-width: 530px;
   }
 
   .header__offer-info p {
@@ -676,6 +779,8 @@ footer {
     height: 100%;
     padding-top: 0;
     min-height: unset;
+    background-image: none;
+    padding-top: 30px;
   }
 }
 
@@ -822,24 +927,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    text-align: center;
-  }
-
   .header {
     height: 100%;
   }
 
   .header__offer {
     padding-bottom: 12px;
-  }
-
-  .header__offer-wrap {
-    min-height: unset;
-  }
-
-  .header__offer-info p {
-    font-size: 21px;
   }
 }
 
@@ -855,51 +948,28 @@ footer {
     margin-bottom: 10px;
   }
 
+  .btn {
+    font-size: 13px;
+  }
+
+  .header .overtitle {
+    font-size: 14px;
+  }
+
   .header__offer {
     padding-bottom: 0;
   }
 
+  .header__offer-stats .stat-info p {
+    font-size: 26px;
+  }
+
+  .header__offer-stats .stat-info span {
+    font-size: 14px;
+  }
+
   .header__offer-info span {
     font-size: 22px;
-  }
-
-  .header__offer-info p {
-    font-size: 18px;
-    margin-bottom: 17px;
-  }
-
-  .header__offer-info .header__list {
-    margin-bottom: 19px;
-  }
-
-  .header__offer-info .header__list-item {
-    background-size: 31px 27px;
-    padding-left: 43px;
-  }
-
-  .header__offer-info .header__list-item span {
-    font-size: 15px;
-  }
-
-  .header__offer-info .header__list-item span:nth-child(1) {
-    font-size: 16px;
-  }
-
-  .header__offer-info .header__list-item:nth-child(2) {
-    padding-left: 43px;
-  }
-
-  .header__offer-info .header__list-item:not(:last-child) {
-    margin-bottom: 13px;
-  }
-
-  .header__offer-info ul li {
-    padding-left: 56px;
-  }
-
-  .rights span {
-    font-size: 14px;
-    line-height: 1.5;
   }
 }
 
