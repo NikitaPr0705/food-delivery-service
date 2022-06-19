@@ -4,10 +4,13 @@ $containerWidth: 1150;
 // pixels on each side * 2
 $containerPadding: 40;
 $containerSidePadding: math.div($containerPadding, 2);
-$breakpoint1450: 1449.98 + px;
-$breakpoint992: 991.98 + px;
-$breakpoint768: 767.98 + px;
-$breakpoint480: 479.98 + px;
+$breakpoint1450: 1450 + px;
+$breakpoint1280: 1280 + px;
+$breakpoint1024: 1024 + px;
+$breakpoint992: 992+ px;
+$breakpoint768: 768 + px;
+$breakpoint576: 576 + px;
+$breakpoint480: 480+ px;
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint992;

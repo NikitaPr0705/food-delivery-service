@@ -9,8 +9,12 @@
     margin: 0 auto;
     padding: 0 $containerSidePadding + px;
 
-    @media (max-width: $breakpoint1450) {
-        max-width: 1200px;
+    // @media (max-width: $breakpoint1450) {
+    //     // max-width: 1200px;
+    // }
+
+    @media (max-width: $breakpoint1280) {
+        // max-width: 97%;
     }
 
     @media (max-width: $breakpoint992) {
@@ -52,8 +56,55 @@ h1 {
 }
 
 .section__title {
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
     text-align: center;
+    color: $colorTitle;
+    margin-bottom: 22px;
+}
+
+.section__overtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    color: $colorBtn;
+    margin-bottom: 7px;
+
+}
+.section__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.5;
+    text-align: center;
+    color: $colorText;
+    margin-bottom: 108px;
+
+}
+
+.buttons-wrapper {
+    display: flex;
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+    .btn:not(:last-child) {
+        margin-right: 27px;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #CACACA;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: #CACACA;
+    }
 }
 
 .btn {
@@ -82,6 +133,8 @@ h1 {
     }
 }
 
+
+
 // Animations
 // Fade
 @keyframes fade {
@@ -94,7 +147,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: $breakpoint1280) {
     h1 {
         font-size: 40px;
     }
@@ -103,9 +156,19 @@ h1 {
         padding: 20px 30px;
     }
 
+    .section__subtitle {
+        margin-bottom: 80px;
+
+    }
+
+    .buttons-wrapper {
+        padding-bottom: 40px;
+        margin-bottom: 18px
+    }
+
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: $breakpoint1024) {
     h1 {
         font-size: 32px;
     }
@@ -114,20 +177,32 @@ h1 {
         padding: 13px 22px;
     }
 
+    .section__overtitle {
+        font-size: 16px;
+    }
+
+    .section__title {
+        font-size: 32px;
+    }
+
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: $breakpoint992) {
 
     h1 {
         text-align: center;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: $breakpoint768) {
+
+    .section__subtitle {
+        margin-bottom: 40px;
+    }
 
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: $breakpoint576) {
     h1 {
         font-size: 22px;
         margin-bottom: 10px;
@@ -138,10 +213,15 @@ h1 {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: $breakpoint480) {
 
     h1 {
         max-width: 220px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 13px 15px;
     }
 
 }

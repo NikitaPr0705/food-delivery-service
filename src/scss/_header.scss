@@ -50,29 +50,6 @@
             padding-right: 50px;
         }
 
-
-        &-buttons {
-            display: flex;
-            position: relative;
-            padding-bottom: 60px;
-            margin-bottom: 60px;
-
-            .btn:not(:last-child) {
-                margin-right: 27px;
-            }
-
-            &::after {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background: #CACACA;
-                content: "";
-                height: 1px;
-                width: 100%;
-                background: #CACACA;
-            }
-        }
-
         &-stats {
             display: flex;
             justify-content: space-between;
@@ -246,6 +223,7 @@
             width: 36%;
             height: 81%;
         }
+
         // background-image: url('../img/images/header/header-offer-img.png');
         // background-repeat: no-repeat;
         // background-position: right center;
@@ -254,7 +232,7 @@
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: $breakpoint1280) {
 
     .nav {
         padding: 22px 0;
@@ -265,11 +243,6 @@
 
         &-wrap {
             min-height: 610px;
-        }
-
-        &-buttons {
-            padding-bottom: 40px;
-            margin-bottom: 18px
         }
 
         &-stats {
@@ -295,7 +268,7 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $breakpoint1024) {
     .overtitle {
         font-size: 14px;
         margin-bottom: 20px;
@@ -344,7 +317,7 @@
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $breakpoint992) {
     .container {
         max-width: 720px;
     }
@@ -378,9 +351,6 @@
             text-align: center;
         }
 
-        // .btn {
-        //     margin-bottom: 18px;
-        // }
     }
 
     .header__offer {
@@ -392,7 +362,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint768) {
 
     .header {
         height: 100%;
@@ -404,7 +374,7 @@
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $breakpoint576) {
 
     .header {
         .overtitle {
@@ -435,9 +405,36 @@
 
     }
 
+    .header__offer-descr {
+        margin-bottom: 28px;
+        line-height: 1.8;
+    }
+
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: $breakpoint480) {
+
+    .header__offer {
+        padding-bottom: 0;
+
+        &-stats {
+
+            .stat-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
 
 .burger {
     display: none;
@@ -482,7 +479,7 @@
         }
 
         &__item-link {
-            font-size: 25px;
+            font-size: 20px;
         }
 
         &.active {
@@ -506,7 +503,7 @@
         margin: 0 auto;
 
         p {
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 
