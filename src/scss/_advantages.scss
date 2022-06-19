@@ -1,0 +1,49 @@
+.advantages {
+
+    .container {}
+
+    &__wrapper {
+        max-width: 579px;
+    }
+
+    .section {
+
+        // .section__title
+
+        &__title {
+            text-align: start;
+            margin-bottom: 16px;
+        }
+
+        // .section__subtitle
+
+        &__subtitle {
+            margin-bottom: 35px;
+            text-align: start;
+            max-width: 541px;
+        }
+
+        // .section__list
+
+        &__list {
+            flex-wrap: wrap;
+        }
+
+        // .section__list-item
+
+        &__list-item {
+            width: 40%;
+            align-items: flex-start;
+
+            svg {
+                max-width: 63px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .item-title {}
+
+    .item-descr {}
+}
+

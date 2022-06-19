@@ -75,6 +75,7 @@ h1 {
     margin-bottom: 7px;
 
 }
+
 .section__subtitle {
     font-weight: 400;
     font-size: 12px;
@@ -133,6 +134,52 @@ h1 {
     }
 }
 
+.section {
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 59px;
+
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+
+            &:not(:last-child) {
+                margin-right: 7%;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+                max-width: 218px;
+                margin-bottom: 59px;
+            }
+        }
+
+        .item-title {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1.43;
+            text-align: center;
+            color: $colorTitle;
+            margin-bottom: 15px;
+        }
+
+        .item-descr {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.67;
+            text-align: center;
+            color: $colorText;
+        }
+    }
+
+}
+
 
 
 // Animations
@@ -185,6 +232,20 @@ h1 {
         font-size: 32px;
     }
 
+    .section {
+        &__list {
+            &-item {
+                svg {
+                    margin-bottom: 35px;
+                }
+            }
+
+            .item-title {
+                font-size: 23px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: $breakpoint992) {
@@ -198,6 +259,30 @@ h1 {
 
     .section__subtitle {
         margin-bottom: 40px;
+    }
+
+    .section {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 59px;
+
+            &-item {
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                    margin-right: 0;
+                }
+
+
+                svg {
+                    width: 50%;
+                }
+            }
+        }
     }
 
 }

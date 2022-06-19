@@ -282,6 +282,61 @@ h1 {
           box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
 }
 
+.section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 59px;
+}
+
+.section__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.section__list-item:not(:last-child) {
+  margin-right: 7%;
+}
+
+.section__list-item svg {
+  width: 100%;
+  height: 100%;
+  max-width: 218px;
+  margin-bottom: 59px;
+}
+
+.section__list .item-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.43;
+  text-align: center;
+  color: #121212;
+  margin-bottom: 15px;
+}
+
+.section__list .item-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  color: #656565;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -571,40 +626,6 @@ h1 {
   background-color: #CACACA;
 }
 
-.how-it-works__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 59px;
-}
-
-.how-it-works__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30%;
-}
-
-.how-it-works__item svg {
-  width: 100%;
-  height: 100%;
-  max-width: 218px;
-  margin-bottom: 59px;
-}
-
 .how-it-works .buttons-wrapper {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -626,21 +647,36 @@ h1 {
   max-width: 674px;
 }
 
-.how-it-works .item-title {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.43;
-  text-align: center;
-  color: #121212;
-  margin-bottom: 15px;
+.advantages__wrapper {
+  max-width: 579px;
 }
 
-.how-it-works .item-descr {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  text-align: center;
-  color: #656565;
+.advantages .section__title {
+  text-align: start;
+  margin-bottom: 16px;
+}
+
+.advantages .section__subtitle {
+  margin-bottom: 35px;
+  text-align: start;
+  max-width: 541px;
+}
+
+.advantages .section__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages .section__list-item {
+  width: 40%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.advantages .section__list-item svg {
+  max-width: 63px;
+  margin-bottom: 24px;
 }
 
 footer {
@@ -837,11 +873,11 @@ footer {
     font-size: 32px;
   }
 
-  .how-it-works__item svg {
+  .section__list-item svg {
     margin-bottom: 35px;
   }
 
-  .how-it-works .item-title {
+  .section__list .item-title {
     font-size: 23px;
   }
 }
@@ -1092,16 +1128,7 @@ footer {
     margin-bottom: 40px;
   }
 
-  .trusted-by__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .how-it-works .container {
-    padding-bottom: 70px;
-  }
-
-  .how-it-works__list {
+  .section__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1118,16 +1145,26 @@ footer {
     margin-bottom: 59px;
   }
 
-  .how-it-works__item {
+  .section__list-item {
     width: 100%;
   }
 
-  .how-it-works__item:not(:last-child) {
+  .section__list-item:not(:last-child) {
     margin-bottom: 40px;
+    margin-right: 0;
   }
 
-  .how-it-works__item svg {
+  .section__list-item svg {
     width: 50%;
+  }
+
+  .trusted-by__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .how-it-works .container {
+    padding-bottom: 70px;
   }
 }
 
