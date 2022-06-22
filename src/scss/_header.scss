@@ -211,7 +211,6 @@
     .header__offer-wrap {
         position: relative;
         display: flex;
-        // flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 100%;
@@ -355,7 +354,6 @@
 
     .header__offer {
         height: 100%;
-        padding-top: 0;
         min-height: unset;
         background-image: none;
         padding-top: 30px;
@@ -415,7 +413,7 @@
 @media screen and (max-width: $breakpoint480) {
 
     .header__offer {
-        padding-bottom: 0;
+
 
         &-stats {
 
