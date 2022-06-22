@@ -239,17 +239,6 @@ h1 {
   margin-right: 27px;
 }
 
-.buttons-wrapper::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #CACACA;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background: #CACACA;
-}
-
 .btn {
   font-weight: 400;
   font-size: 16px;
@@ -369,6 +358,17 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 851px;
+}
+
+.header .buttons-wrapper::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #CACACA;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #CACACA;
 }
 
 .header .btn__header .btn {
@@ -656,6 +656,28 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.advantages .wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   max-width: 1440px;
   width: 100%;
@@ -664,6 +686,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
+  margin-bottom: 75px;
 }
 
 .advantages .inner-wrapper {
@@ -733,6 +756,68 @@ h1 {
   line-height: 2.14;
   color: #656565;
   text-align: start;
+}
+
+.advantages .buttons-wrapper {
+  width: 100%;
+  max-width: 1190px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.promo-burger {
+  background-color: #000;
+}
+
+.promo-burger__content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  width: 100%;
+  max-width: 638px;
+  padding-right: 113px;
+  padding-top: 274px;
+  padding-bottom: 270px;
+}
+
+.promo-burger .section__title {
+  color: white;
+  text-align: start;
+  margin-bottom: 15px;
+  font-size: 56px;
+  line-height: 1.18;
+}
+
+.promo-burger .section__subtitle {
+  color: white;
+  text-align: start;
+  margin-bottom: 27px;
+  font-size: 12px;
+  line-height: 2.5;
+}
+
+.promo-burger .buttons-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.promo-wrapper {
+  background-image: url(../img/images/promo-burger/promo-burger-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
 
 footer {
@@ -965,6 +1050,10 @@ footer {
   }
 
   .advantages {
+    padding-bottom: 150px;
+  }
+
+  .advantages .wrapper {
     margin: 100px auto 0 auto;
   }
 
@@ -1022,6 +1111,10 @@ footer {
   }
 
   .advantages {
+    padding-bottom: 100px;
+  }
+
+  .advantages .wrapper {
     background-image: none;
     margin: 30px auto 0 auto;
   }
@@ -1067,6 +1160,44 @@ footer {
 
   .advantages__wrapper img {
     display: none;
+  }
+
+  .promo-burger__content {
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+    padding-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .promo-burger .section__title {
+    font-size: 40px;
+  }
+
+  .promo-wrapper {
+    position: relative;
+    background-size: cover;
+  }
+
+  .promo-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .promo-burger .section__title {
+    font-size: 30px;
   }
 }
 
@@ -1309,7 +1440,7 @@ footer {
     padding-bottom: 70px;
   }
 
-  .advantages {
+  .advantages .wrapper {
     padding-bottom: 12px;
   }
 
@@ -1346,6 +1477,10 @@ footer {
   .trusted-by__item {
     width: 40%;
     margin-bottom: 25px;
+  }
+
+  .advantages {
+    padding-bottom: 70px;
   }
 
   .advantages .section__list-item {

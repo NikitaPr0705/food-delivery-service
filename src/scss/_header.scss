@@ -11,6 +11,19 @@
     // background-size: contain;
     // background-position: right center;
 
+    .buttons-wrapper {
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #CACACA;
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: #CACACA;
+        }
+    }
+
 
     .btn__header {
         .btn {

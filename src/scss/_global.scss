@@ -95,17 +95,6 @@ h1 {
     .btn:not(:last-child) {
         margin-right: 27px;
     }
-
-    &::after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: #CACACA;
-        content: "";
-        height: 1px;
-        width: 100%;
-        background: #CACACA;
-    }
 }
 
 .btn {

@@ -2,16 +2,32 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: 100%;
-    max-width: 1440px;
+    // max-width: 1440px;
     width: 100%;
-    margin: 157px auto 0 auto;
-    background-image: url(../img/images/advantages/advantages-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
+    padding-bottom: 200px;
+    // margin: 157px auto 0 auto;
+    // background-image: url(../img/images/advantages/advantages-bg.png);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: right center;
 
-    &__wrapper {}
+    .wrapper {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        max-width: 1440px;
+        width: 100%;
+        margin: 157px auto 0 auto;
+        background-image: url(../img/images/advantages/advantages-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right center;
+        margin-bottom: 75px;
+    }
 
     .inner-wrapper {
         height: 100%;
@@ -24,9 +40,6 @@
         padding-right: 50px;
         padding-top: 50px;
     }
-
-
-    .container {}
 
 
     .section {
@@ -86,6 +99,14 @@
         color: $colorText;
         text-align: start;
     }
+
+    .buttons-wrapper {
+        width: 100%;
+        max-width: 1190px;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 @media (min-width: 993px) {
@@ -109,7 +130,11 @@
 
 @media (max-width: $breakpoint1024) {
     .advantages {
-        margin: 100px auto 0 auto;
+        padding-bottom: 150px;
+
+        .wrapper {
+            margin: 100px auto 0 auto;
+        }
 
         &__wrapper {
             max-width: 838px;
@@ -126,8 +151,11 @@
 @media (max-width: $breakpoint992) {
 
     .advantages {
-        background-image: none;
-        margin: 30px auto 0 auto;
+        padding-bottom: 100px;
+        .wrapper {
+            background-image: none;
+            margin: 30px auto 0 auto;
+        }
 
         .inner-wrapper {
             padding-right: 0;
@@ -168,7 +196,9 @@
 
 @media (max-width: $breakpoint768) {
     .advantages {
-        padding-bottom: 12px;
+        .wrapper {
+            padding-bottom: 12px;
+        }
 
         .section {
             &__list {
@@ -186,6 +216,7 @@
 
 @media (max-width: $breakpoint576) {
     .advantages {
+        padding-bottom: 70px;
         .section {
             &__list {
                 &-item {
