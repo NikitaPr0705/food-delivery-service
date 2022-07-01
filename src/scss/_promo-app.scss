@@ -1,21 +1,4 @@
-// .promo-wrapper
-.promo-wrapper {
-    outline: 1px solid red;
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
-
-    img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 47%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.promo-burger {
+.promo-app {
     background-color: #000;
 
     // .promo-burger__content
@@ -29,8 +12,8 @@
         width: 100%;
         max-width: 638px;
         padding-right: 113px;
-        padding-top: 274px;
-        padding-bottom: 270px;
+        padding-top: 185px;
+        padding-bottom: 176px;
     }
 
     .section {
@@ -50,7 +33,7 @@
         &__subtitle {
             color: white;
             text-align: start;
-            margin-bottom: 27px;
+            margin-bottom: 38px;
             font-size: 12px;
             line-height: 2.5;
         }
@@ -59,28 +42,37 @@
     .buttons-wrapper {
         margin-bottom: 0;
         padding-bottom: 0;
-
     }
-
-}
-
-
-
-
-@media (max-width: $breakpoint1280) {
 
     .promo-wrapper {
 
         img {
-            width: 45%;
+            object-fit: contain;
+            width: 55%;
+            height: auto;
         }
 
     }
 }
 
+@media (max-width: $breakpoint1024) {
+    .promo-app {
+        .promo-wrapper {
+            img {
+                width: 50%;
+            }
+        }
+
+        &__content {
+            padding-top: 130px;
+            padding-bottom: 130px;
+        }
+    }
+}
+
 @media (max-width: $breakpoint992) {
 
-    .promo-burger {
+    .promo-app {
         &__content {
             position: relative;
             background-color: transparent;
@@ -89,6 +81,7 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            margin: 0 auto;
         }
 
         .section {
@@ -96,44 +89,25 @@
                 font-size: 40px;
             }
         }
-    }
 
-    .promo-wrapper {
-        position: relative;
-        background-size: cover;
+        .promo-wrapper {
 
-
-        &::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-            background-color: rgba(0, 0, 0, 0.8);
+            img {
+                width: 100%;
+                height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
-
-        img {
-            width: 100%;
-        }
-
     }
 }
 
 @media (max-width: $breakpoint992) {
-    .promo-burger {
+    .promo-app {
         .section {
             &__title {
                 font-size: 30px;
             }
-        }
-
-        &__content {
-            padding-top: 60px;
-            padding-bottom: 60px;
         }
     }
 }

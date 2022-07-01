@@ -31,10 +31,6 @@
         }
     }
 
-    &__title {
-        font-size: 15px;
-    }
-
 
     .container {
         position: relative;
@@ -55,6 +51,10 @@
     .trusted-by {
         padding-top: 60px;
         margin-bottom: 99px;
+
+        &__list {
+            padding-bottom: 100px;
+        }
     }
 
 }
@@ -80,9 +80,11 @@
 @media (max-width: 576px) {
 
     .trusted-by {
+        margin-bottom: 60px;
 
         &__list {
             justify-content: space-around;
+            padding-bottom: 30px;
         }
 
         &__item {

@@ -6,10 +6,6 @@
     display: flex;
     flex-direction: column;
     min-height: 851px;
-    // background-image: url(../img/images/header/header-bg.jpg);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: right center;
 
     .buttons-wrapper {
         &::after {
@@ -27,7 +23,7 @@
 
     .btn__header {
         .btn {
-            padding: 19px 25px;
+            padding: 19px 27px;
         }
 
         &:not(:last-child) {
@@ -77,15 +73,17 @@
                 }
 
                 p {
+                    display: inline-block;
                     font-weight: 700;
                     font-size: 56px;
                     line-height: 1.18;
                     color: $colorTitle;
+                    margin-bottom: 7px;
 
-                    span {
+                    & ~ span {
                         font-weight: 700;
-                        font-size: inherit;
-                        line-height: inherit;
+                        font-size: 56px;
+                        line-height: 1.18;
                         color: $colorBtn;
                     }
                 }
@@ -184,7 +182,7 @@
 
 .cart {
     margin-left: 44px;
-    margin-right: 32px;
+    margin-right: 38px;
 
     p {
         color: $colorHeader;
@@ -217,7 +215,7 @@
 
         // .menu__item
         &__item {
-            margin-left: 25px;
+            margin-left: 30px;
         }
     }
 
@@ -246,6 +244,10 @@
 
 @media screen and (max-width: $breakpoint1280) {
 
+    .header {
+        min-height: 670px;
+    }
+
     .nav {
         padding: 22px 0;
     }
@@ -261,6 +263,10 @@
             .stat-info {
                 p {
                     font-size: 43px;
+
+                    & ~ span {
+                        font-size: 43px;
+                    }
                 }
             }
         }
@@ -281,12 +287,14 @@
 }
 
 @media screen and (max-width: $breakpoint1024) {
+
     .overtitle {
         font-size: 14px;
         margin-bottom: 20px;
     }
 
     .header {
+
         .btn__header {
             .btn {
                 padding: 13px 22px;
@@ -309,6 +317,10 @@
             .stat-info {
                 p {
                     font-size: 34px;
+
+                    & ~ span {
+                        font-size: 34px;
+                    }
                 }
 
                 span {
@@ -400,6 +412,10 @@
             .stat-info {
                 p {
                     font-size: 26px;
+
+                    & ~ span {
+                        font-size: 26px;
+                    }
                 }
 
                 span {
@@ -437,6 +453,10 @@
 
                 p {
                     font-size: 20px;
+
+                    & ~ span {
+                        font-size: 20px;
+                    }
                 }
 
                 span {
