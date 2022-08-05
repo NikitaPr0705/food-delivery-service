@@ -62,17 +62,8 @@
 @media (max-width: $breakpoint768) {
 
     .trusted-by {
-
-
         &__list {
             flex-wrap: wrap;
-        }
-
-        .container {
-
-            &::after {
-            // display: none;
-            }
         }
     }
 }

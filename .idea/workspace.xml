@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aaf2ef02-97ae-4473-b6aa-6bec4ea335d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/_accordion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/_accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Counter/Counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/_filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/_filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Inputs/_inputs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Inputs/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/_modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/_navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/_select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/_select.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepForm/_stepForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepForm/_stepForm.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepForm/_stepFrom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Swiper/swiper.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Swiper/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tabs/_tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tabs/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tabs/tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoBackground/video-bg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoBackground/video-bg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/jquery-3.6.0(lib).min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/phonemask(lib).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/smooth-scroll.min(lib).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/swiper(lib).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_column-count.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_contacts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_our-features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_our-features.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_portfolio.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_reviews.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_trusted-by.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_trusted-by.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_video-bg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/libs/_swiper.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CwA6QM1ZE6PpN5l3rnCTPNEMiy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aaf2ef02-97ae-4473-b6aa-6bec4ea335d1" name="Changes" comment="" />
+      <created>1659703098611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659703098611</updated>
+    </task>
+    <servers />
+  </component>
+</project>

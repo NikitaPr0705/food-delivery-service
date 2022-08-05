@@ -9,10 +9,6 @@
     margin: 0 auto;
     padding: 0 $containerSidePadding + px;
 
-    // @media (max-width: $breakpoint1450) {
-    //     // max-width: 1200px;
-    // }
-
     @media (max-width: $breakpoint1280) {
         // max-width: 97%;
     }
@@ -43,9 +39,6 @@ img {
     // чтобы изображения не ужимались
 }
 
-section {
-    // padding: 50px 0;
-}
 
 h1 {
     font-weight: 700;
