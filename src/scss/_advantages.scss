@@ -4,14 +4,10 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    // max-width: 1440px;
     width: 100%;
     padding-bottom: 200px;
-    // margin: 157px auto 0 auto;
-    // background-image: url(../img/images/advantages/advantages-bg.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: right center;
+
+    // .wrapper
 
     .wrapper {
         box-sizing: border-box;
@@ -28,6 +24,8 @@
         background-position: right center;
     }
 
+    // .inner-wrapper
+
     .inner-wrapper {
         height: 100%;
         display: flex;
@@ -40,10 +38,7 @@
         padding-top: 50px;
     }
 
-    &__wrapper {
-
-    }
-
+    // .section
 
     .section {
 
@@ -70,6 +65,8 @@
             max-width: 557px;
             margin-bottom: 0;
 
+            // .section__list-item
+
             &-item {
                 width: 100%;
                 align-items: flex-start;
@@ -87,8 +84,9 @@
             }
         }
 
-        // .section__list-item
     }
+
+    // .item-title
 
     .item-title {
         font-size: 22px;
@@ -97,6 +95,8 @@
         margin-bottom: 14px;
     }
 
+    // .item-descr
+
     .item-descr {
         font-weight: 400;
         font-size: 14px;
@@ -104,6 +104,8 @@
         color: $colorText;
         text-align: start;
     }
+
+    // .buttons-wrapper
 
     .buttons-wrapper {
         width: 100%;
@@ -116,11 +118,18 @@
 }
 
 @media (min-width: 993px) {
+
+    // .advantages
+
     .advantages {
+
+        // .wrapper
 
         .wrapper {
             margin: 100px auto 0 auto;
         }
+
+        // .advantages__wrapper
 
         &__wrapper {
             position: relative;
@@ -128,7 +137,6 @@
             justify-content: space-between;
             align-items: center;
             height: 100%;
-            // min-height: 710px;
             max-width: 935px;
 
             img {
@@ -140,21 +148,31 @@
 }
 
 @media (max-width: $breakpoint1280) {
+
+    // .advantages
+
     .advantages {
         padding-bottom: 100px;
     }
 }
 
 @media (max-width: $breakpoint1024) {
+
+    // .advantages
+
     .advantages {
         padding-bottom: 150px;
 
+        // .advantages__wrapper
 
         &__wrapper {
             max-width: 838px;
         }
 
         .section {
+
+            // .section__list
+
             &__list {
                 gap: 50px;
             }
@@ -164,27 +182,43 @@
 
 @media (max-width: $breakpoint992) {
 
+    // .advantages
+
     .advantages {
         padding-bottom: 100px;
+
+        // .wrapper
+
         .wrapper {
             background-image: none;
             margin: 30px auto 0 auto;
         }
+
+        // .inner-wrapper
 
         .inner-wrapper {
             padding-right: 0;
             max-width: 100%;
         }
 
+        // .section
+
         .section {
+
+            // .section__title
+
             &__title {
                 text-align: center;
             }
+
+            // .section__subtitle
 
             &__subtitle {
                 text-align: center;
                 max-width: 100%;
             }
+
+            // .section__list
 
             &__list {
                 max-width: 100%;
@@ -194,6 +228,8 @@
             }
 
         }
+
+        // .advantages__wrapper
 
         &__wrapper {
             display: flex;
@@ -209,17 +245,33 @@
 }
 
 @media (max-width: $breakpoint768) {
+
+    // .advantages
+
     .advantages {
+
+        // .wrapper
+
         .wrapper {
             padding-bottom: 12px;
         }
 
+        // .section
+
         .section {
+
+            // .section__list
+
             &__list {
+
+                // .section__item
+
                 &-item {
+
                     &:not(:last-child) {
                         margin-bottom: 0;
                     }
+
                 }
             }
         }
@@ -229,10 +281,22 @@
 }
 
 @media (max-width: $breakpoint576) {
+
+    // .advantages
+
     .advantages {
         padding-bottom: 70px;
+
+        // .section
+
         .section {
+
+            // .section__list
+
             &__list {
+
+                // .section__list-item
+
                 &-item {
                     max-width: 100%;
                     align-items: center;

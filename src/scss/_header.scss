@@ -1,5 +1,4 @@
 // Header
-
 .header {
     box-sizing: border-box;
     height: 100vh;
@@ -19,7 +18,7 @@
             background: #CACACA;
         }
     }
-
+    // .buttons-wrapper
 
     .btn__header {
         .btn {
@@ -523,10 +522,9 @@
             pointer-events: all;
             justify-content: center;
             align-items: center;
-            z-index: 22;
+            z-index: 2;
             animation: fade 0.1s linear;
         }
-
 
     }
 

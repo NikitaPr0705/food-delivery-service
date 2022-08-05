@@ -773,7 +773,6 @@ h1 {
 }
 
 .promo-wrapper {
-  outline: 1px solid red;
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
@@ -1014,10 +1013,15 @@ h1 {
 }
 
 .app-reviews .cards {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
   gap: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .app-reviews .cards__item {
@@ -1027,6 +1031,7 @@ h1 {
           box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
   border-radius: 24px;
   margin-bottom: 28px;
+  width: 31%;
 }
 
 .app-reviews .cards__header {
@@ -1650,6 +1655,7 @@ h1 {
             align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin: 0 auto;
   }
 
   .promo-burger .section__title {
@@ -1676,15 +1682,6 @@ h1 {
 
   .promo-wrapper img {
     width: 100%;
-  }
-
-  .promo-burger .section__title {
-    font-size: 30px;
-  }
-
-  .promo-burger__content {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   .app-functions .container {
@@ -1737,9 +1734,12 @@ h1 {
   }
 
   .app-reviews .cards {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .app-reviews .cards__item {
+    width: 45%;
   }
 
   .promo-app__content {
@@ -1909,7 +1909,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 22;
+    z-index: 2;
     -webkit-animation: fade 0.1s linear;
             animation: fade 0.1s linear;
   }
@@ -2051,6 +2051,15 @@ h1 {
     margin-bottom: 0;
   }
 
+  .promo-burger .section__title {
+    font-size: 30px;
+  }
+
+  .promo-burger__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .our-features {
     padding-top: 50px;
   }
@@ -2101,10 +2110,8 @@ h1 {
             align-items: center;
   }
 
-  .app-reviews .cards {
-    -webkit-column-count: 1;
-       -moz-column-count: 1;
-            column-count: 1;
+  .app-reviews .cards__item {
+    width: 100%;
   }
 
   .app-reviews .cards__header {
